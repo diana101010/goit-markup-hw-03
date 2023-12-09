@@ -34,6 +34,7 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 25.5px 76px 25.5px 156px;
+  margin-right: 76px;
 }
 
 .logo-light {
@@ -52,13 +53,19 @@ body {
   list-style: none;
 }
 
+.header{
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-container {
+  box-sizing: content-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 1158px;
   height: 72px;
-  border-bottom: 1px solid var(--border-color);
+  margin: 0;
+  padding: 0 15px 0 15px 0 15px; 
 
 }
 
@@ -67,6 +74,7 @@ body {
   flex-direction: row;
   gap: 40px;
   padding-top: 24px;
+  align-items: center;
 }
 .header-butttons-list {
   display: flex;
@@ -74,6 +82,7 @@ body {
   gap: 40px;
   align-items: center;
   list-style-type: none;
+  padding: 24px 0 24px 0;
 }
 
 .header-list {
@@ -119,6 +128,9 @@ body {
   font-style: normal;
 }
 
+.images{
+  display: block;
+}
 .title {
   color: #fff;
   background-color: #2e2f42;
@@ -128,6 +140,7 @@ body {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  max-width: 496px;
 }
 
 .title-section {
@@ -138,6 +151,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 188px 0 188px;
 }
 
 .button-title {
@@ -150,15 +164,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.64px;
   border-radius: 4px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  gap: 10px;
-  border: 4px;
-  width: 169px;
+  display: block;
+  min-width: 169px;
   height: 56px;
+  border: none;
 }
 
 .button-title:hover {
@@ -169,7 +178,7 @@ body {
 }
 
 .features-container {
-  padding-left: 156px;
+  padding: 120px 0 120px;
 }
 
 .chapters-list {
@@ -185,10 +194,11 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }
 
 .subtitle-item {
-  flex-basis: calc ((100%-30px) / 4);
+  flex-basis: calc ((100% - 3 * 24px) / 4);
 }
 .subtitles-text {
   color: var(--contacts-color);
@@ -210,7 +220,11 @@ body {
 }
 
 .images-item {
-  flex-basis: calc((100%-20px) / 3);
+  flex-basis: calc((100% - 3 * 16px) / 3);
+}
+
+.container{
+  box-sizing: content-box;
 }
 .chapters-title {
   color: var(--brand-color);
@@ -227,6 +241,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 72px;
 }
 .visually-hidden{
   height: 1px;
@@ -242,7 +257,7 @@ body {
 }
 .chapters-color {
   background-color: #f4f4fd;
-  padding-left: 156px;
+  padding: 120px 0 120px;
   width: 1440px;
   height: 732px;
   flex-shrink: 0;
@@ -254,9 +269,14 @@ body {
   flex-wrap: wrap;
   gap: 24px;
 }
+.persons{
+  padding: 32px 0;
+
+}
 
 .job-item {
-  flex-basis: calc((100%-30px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  border-radius: 0px 0px 4px 4px 4px;
 }
 .name-teamcard {
   color: var(--brand-color);
@@ -266,6 +286,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.4px;
   background-color: #fff;
+  margin-bottom: 8px;
 }
 .name-teamcard-centered {
   text-align: center;
@@ -279,6 +300,13 @@ body {
   letter-spacing: 0.32px;
 }
 
+.teamcard-details{
+   padding: 32px 16px;
+   border: 1px solid #e7e9fc;
+   border-top: none;
+   margin-bottom: 8px;
+}
+
 .buttons {
   color: var(--buttons-color);
   background-color: #f4f4fd;
@@ -288,16 +316,21 @@ body {
   line-height: 1.5;
   letter-spacing: 0.64px;
   cursor: pointer;
+  padding: 12px 24px 12px;
+  border: 1px solid #e7e9fc;
+   border-radius: 4px;
 }
 
 .buttons:hover {
   color: #ffffffff;
   background-color: #404bbf;
+  border: 1px solid transparent; 
 }
 
 .buttons:focus {
   color: #fff;
   background-color: #404bbf;
+  border: 1px solid transparent; 
 }
 
 .functions-paragraphs {
@@ -315,7 +348,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  width: 264px;
+  max-width: 264px
 }
 
 .footer-background {
@@ -327,6 +360,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding: 100px 0;
 }
 
 .logo-footer {
@@ -338,7 +372,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  display: inline-flex;
+  display: inline-block;
+  margin-bottom: 16px;
   height: 24px;
   align-items: center;
   flex-shrink: 0;
@@ -357,13 +392,17 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 24px;
+  margin-bottom: 72px; 
+  column-gap: 24px;
+  row-gap: 48px;
+
 }
 
 .item-image-port{
-  flex-basis: calc((100%-20px)/3);
+  flex-basis: calc((100% - 48px) / 3);
   border: 1px solid var(--border-color);
 }
 
 .portfolio-container{
-  padding-left: 156px;
+  padding: 96px 0 120px 0;
 }

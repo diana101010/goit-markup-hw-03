@@ -11,10 +11,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Studio</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="header-container">
         <nav class="header-buttons">
           <a class="logo link" href="./index.html"
@@ -52,103 +59,144 @@
     <main>
       <!-- SECTION1 -->
       <section class="portfolio-container section">
-        <h1 class="visually-hidden">Buttons</h1>
-        <ul class="list buttons-list-port">
-          <li><button type="button" class="buttons">All</button></li>
-          <li><button type="button" class="buttons">Web Site</button></li>
-          <li><button type="button" class="buttons">App</button></li>
-          <li><button type="button" class="buttons">Design</button></li>
-          <li><button type="button" class="buttons">Marketing</button></li>
-        </ul>
-        <ul class="list images-port">
-          <li class="item-image-port">
-            <a href="" class="link">
-              <img src="./images/bankapp.jpg" alt="Bankapp" width="360" />
-              <h2 class="name-teamcard">Banking App Interface Concept</h2>
-              <p class="functions-paragraphs">App</p>
-            </a>
-          </li>
-          <li class="item-image-port">
-            <a href="" class="link">
-              <img
-                src="./images/caslesspayment.jpg"
-                alt="Cashpayment"
-                width="360"
-              />
-              <h2 class="name-teamcard">Cashless Payment</h2>
-              <p class="functions-paragraphs">Marketing</p>
-            </a>
-          </li>
-          <li class="item-image-port">
-            <a href="" class="link">
-              <img
-                src="./images/meditationapp.jpg"
-                alt="Meditationapp"
-                width="360"
-              />
-              <h2 class="name-teamcard">Meditation App</h2>
-              <p class="functions-paragraphs">App</p>
-            </a>
-          </li>
-          <li class="item-image-port">
-            <a href="" class="link">
-              <img
-                src="./images/taxservice.jpg"
-                alt="taxiservice"
-                width="360"
-              />
-              <h2 class="name-teamcard">Taxi Service</h2>
-              <p class="functions-paragraphs">Marketing</p>
-            </a>
-          </li>
-          <li class="item-image-port">
-            <a href="" class="link">
-              <img
-                src="./images/screenilustrations.jpg"
-                alt="screenilustrations"
-                width="360"
-              />
-              <h2 class="name-teamcard">Screen Illustrations</h2>
-              <p class="functions-paragraphs">Design</p>
-            </a>
-          </li>
-          <li class="item-image-port">
-            <a href="" class="link">
-              <img src="./images/onlinrcourses.jpg" alt="woman" width="360" />
-              <h2 class="name-teamcard">Online Courses</h2>
-              <p class="functions-paragraphs">Marketing</p>
-            </a>
-          </li>
-          <li class="item-image-port">
-            <a href="" class="link">
-              <img
-                src="./images/instagramconcept.jpg"
-                alt="instagramstories"
-                width="360"
-              />
-              <h2 class="name-teamcard">Instagram Stories Concept</h2>
-              <p class="functions-paragraphs">Design</p>
-            </a>
-          </li>
-          <li class="item-image-port">
-            <a href="" class="link">
-              <img
-                src="./images/organicfood.jpg"
-                alt="organicfood"
-                width="360"
-              />
-              <h2 class="name-teamcard">Organic Food</h2>
-              <p class="functions-paragraphs">Web Site</p>
-            </a>
-          </li>
-          <li class="item-image-port">
-            <a href="" class="link">
-              <img src="./images/freshcofee.jpg" alt="coffee" width="360" />
-              <h2 class="name-teamcard">Fresh Coffee</h2>
-              <p class="functions-paragraphs">Web Site</p>
-            </a>
-          </li>
-        </ul>
+        <div class="container">
+          <h1 class="visually-hidden">Buttons</h1>
+          <ul class="list buttons-list-port">
+            <li><button type="button" class="buttons">All</button></li>
+            <li><button type="button" class="buttons">Web Site</button></li>
+            <li><button type="button" class="buttons">App</button></li>
+            <li><button type="button" class="buttons">Design</button></li>
+            <li><button type="button" class="buttons">Marketing</button></li>
+          </ul>
+          <ul class="list images-port">
+            <li class="item-image-port">
+              <a href="" class="link">
+                <img
+                  src="./images/bankapp.jpg"
+                  class="images"
+                  alt="Bankapp"
+                  width="360"
+                />
+                <div class="teamcard-details">
+                  <h2 class="name-teamcard">Banking App Interface Concept</h2>
+                  <p class="functions-paragraphs">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-image-port">
+              <a href="" class="link">
+                <img
+                  src="./images/caslesspayment.jpg"
+                  class="images"
+                  alt="Cashpayment"
+                  width="360"
+                />
+                <div class="teamcard-details">
+                  <h2 class="name-teamcard">Cashless Payment</h2>
+                  <p class="functions-paragraphs">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-image-port">
+              <a href="" class="link">
+                <img
+                  src="./images/meditationapp.jpg"
+                  class="images"
+                  alt="Meditationapp"
+                  width="360"
+                />
+                <div class="teamcard-details">
+                  <h2 class="name-teamcard">Meditation App</h2>
+                  <p class="functions-paragraphs">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-image-port">
+              <a href="" class="link">
+                <img
+                  src="./images/taxservice.jpg"
+                  class="images"
+                  alt="taxiservice"
+                  width="360"
+                />
+                <div class="teamcard-details">
+                  <h2 class="name-teamcard">Taxi Service</h2>
+                  <p class="functions-paragraphs">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-image-port">
+              <a href="" class="link">
+                <img
+                  src="./images/screenilustrations.jpg"
+                  class="images"
+                  alt="screenilustrations"
+                  width="360"
+                />
+                <div class="teamcard-details">
+                  <h2 class="name-teamcard">Screen Illustrations</h2>
+                  <p class="functions-paragraphs">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-image-port">
+              <a href="" class="link">
+                <img
+                  src="./images/onlinrcourses.jpg"
+                  class="images"
+                  alt="woman"
+                  width="360"
+                />
+                <div class="teamcard-details">
+                  <h2 class="name-teamcard">Online Courses</h2>
+                  <p class="functions-paragraphs">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-image-port">
+              <a href="" class="link">
+                <img
+                  src="./images/instagramconcept.jpg"
+                  class="images"
+                  alt="instagramstories"
+                  width="360"
+                />
+                <div class="teamcard-details">
+                  <h2 class="name-teamcard">Instagram Stories Concept</h2>
+                  <p class="functions-paragraphs">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-image-port">
+              <a href="" class="link">
+                <img
+                  src="./images/organicfood.jpg"
+                  class="images"
+                  alt="organicfood"
+                  width="360"
+                />
+                <div class="teamcard-details">
+                  <h2 class="name-teamcard">Organic Food</h2>
+                  <p class="functions-paragraphs">Web Site</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-image-port">
+              <a href="" class="link">
+                <img
+                  src="./images/freshcofee.jpg"
+                  class="images"
+                  alt="coffee"
+                  width="360"
+                />
+                <div class="teamcard-details">
+                  <h2 class="name-teamcard">Fresh Coffee</h2>
+                  <p class="functions-paragraphs">Web Site</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer-background">
