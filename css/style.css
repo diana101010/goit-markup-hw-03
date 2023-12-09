@@ -45,7 +45,7 @@ body {
   color: var(--brand-color);
 }
 
-.container{
+.container {
   width: 1158px;
   margin: auto;
   padding: 0 15px;
@@ -59,7 +59,7 @@ body {
   list-style: none;
 }
 
-.header{
+.header {
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -94,7 +94,7 @@ body {
   font-size: 16px;
   letter-spacing: 0.32px;
   list-style-type: none;
-   padding: 24px 0 24px 0;
+  padding: 24px 0 24px 0;
 }
 
 .header-list:hover {
@@ -130,7 +130,7 @@ body {
   font-style: normal;
 }
 
-.images{
+.images {
   display: block;
 }
 .title {
@@ -146,10 +146,10 @@ body {
 }
 
 .title-section {
+  padding: 188px 0px;
   background-color: var(--brand-color);
   width: 1440px;
   height: 600px;
-  padding: 188px 0;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -200,7 +200,7 @@ body {
 }
 
 .subtitle-item {
-  flex-basis: calc((100% - 72px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 .subtitles-text {
   color: var(--contacts-color);
@@ -226,10 +226,9 @@ body {
   flex-basis: calc((100% - 48px) / 3);
 }
 
-
 .chapters-title {
   color: var(--brand-color);
-  visuall
+  border-radius: 0px 0px 4px 4px 4px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -244,16 +243,16 @@ body {
   justify-content: center;
   margin-bottom: 72px;
 }
-.visually-hidden{
+.visually-hidden {
   height: 1px;
   overflow: hidden;
   width: 1px;
-  position:absolute;
+  position: absolute;
   white-space: nowrap;
   visibility: hidden;
 }
 
-.section{
+.section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -272,9 +271,8 @@ body {
   gap: 24px;
   border-radius: 0px 0px 4px 4px 4px;
 }
-.persons{
+.persons {
   padding: 32px 0;
-
 }
 
 .job-item {
@@ -303,11 +301,11 @@ body {
   letter-spacing: 0.32px;
 }
 
-.teamcard-details{
-   padding: 32px 16px;
-   border: 1px solid #e7e9fc;
-   border-top: none;
-   margin-bottom: 8px;
+.teamcard-details {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 
 .buttons {
@@ -321,19 +319,19 @@ body {
   cursor: pointer;
   padding: 12px 24px 12px;
   border: 1px solid #e7e9fc;
-   border-radius: 4px;
+  border-radius: 4px;
 }
 
 .buttons:hover {
   color: #ffffffff;
   background-color: #404bbf;
-  border: 1px solid transparent; 
+  border: 1px solid transparent;
 }
 
 .buttons:focus {
   color: #fff;
   background-color: #404bbf;
-  border: 1px solid transparent; 
+  border: 1px solid transparent;
 }
 
 .functions-paragraphs {
@@ -351,7 +349,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  max-width: 264px
+  max-width: 264px;
 }
 
 .footer-background {
@@ -383,7 +381,7 @@ body {
   padding-top: 100px;
 }
 
-.buttons-list-port{
+.buttons-list-port {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -391,22 +389,21 @@ body {
   margin-bottom: 72px;
 }
 
-.images-port{
+.images-port {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 24px;
-  margin-bottom: 72px; 
+  margin-bottom: 72px;
   column-gap: 24px;
   row-gap: 48px;
-
 }
 
-.item-image-port{
-  flex-basis: calc((100% - 48px) / 3);
+.item-image-port {
+  width: calc((100% - 48px) / 3);
   border: 1px solid var(--border-color);
 }
 
-.portfolio-container{
+.portfolio-container {
   padding: 96px 0 120px 0;
 }
