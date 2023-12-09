@@ -7,6 +7,7 @@
   --text-font-family: "Roboto", sans-serif;
   --background-color: #fff;
   --background-color-button: #f4f4fd;
+  --border-color: #e7e9fc;
 }
 
 body {
@@ -29,6 +30,10 @@ body {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 25.5px 76px 25.5px 156px;
 }
 
 .logo-light {
@@ -46,6 +51,31 @@ body {
 .list {
   list-style: none;
 }
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1158px;
+  height: 72px;
+  border-bottom: 1px solid var(--border-color);
+
+}
+
+.header-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding-top: 24px;
+}
+.header-butttons-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  list-style-type: none;
+}
+
 .header-list {
   color: var(--brand-color);
   font-family: Roboto, sans-serif;
@@ -71,6 +101,12 @@ body {
   letter-spacing: 0.32px;
 }
 
+.header-contacts-position {
+  display: flex;
+  gap: 40px;
+  padding-top: 24px;
+  align-items: center;
+}
 .header-contacts:hover {
   color: #404bbf;
 }
@@ -96,6 +132,12 @@ body {
 
 .title-section {
   background-color: var(--brand-color);
+  width: 1440px;
+  height: 600px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .button-title {
@@ -107,6 +149,16 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.64px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  gap: 10px;
+  border: 4px;
+  width: 169px;
+  height: 56px;
 }
 
 .button-title:hover {
@@ -114,6 +166,16 @@ body {
 }
 .button-title:focus {
   background-color: #404bbf;
+}
+
+.features-container {
+  padding-left: 156px;
+}
+
+.chapters-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }
 
 .subtitles {
@@ -125,6 +187,9 @@ body {
   letter-spacing: 0.4px;
 }
 
+.subtitle-item {
+  flex-basis: calc ((100%-30px) / 4);
+}
 .subtitles-text {
   color: var(--contacts-color);
   font-family: Roboto;
@@ -133,9 +198,23 @@ body {
   letter-spacing: 0.32px;
 }
 
+.images-container {
+  padding-left: 156px;
+}
+
+.images-position {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.images-item {
+  flex-basis: calc((100%-20px) / 3);
+}
 .chapters-title {
   color: var(--brand-color);
-  background-color: #ffffffff;
+  visuall
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -144,12 +223,41 @@ body {
   font-weight: 700;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.visually-hidden{
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+  position:absolute;
+  white-space: nowrap;
 }
 
+.section{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .chapters-color {
   background-color: #f4f4fd;
+  padding-left: 156px;
+  width: 1440px;
+  height: 732px;
+  flex-shrink: 0;
 }
 
+.jobs-position {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.job-item {
+  flex-basis: calc((100%-30px) / 4);
+}
 .name-teamcard {
   color: var(--brand-color);
   font-family: Roboto;
@@ -207,8 +315,55 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  width: 264px;
 }
 
 .footer-background {
   background-color: var(--brand-color);
+  width: 1440px;
+  height: 312px;
+  flex-shrink: 0;
+  padding-left: 156px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.logo-footer {
+  color: var(--buttons-color);
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  display: inline-flex;
+  height: 24px;
+  align-items: center;
+  flex-shrink: 0;
+  padding-top: 100px;
+}
+
+.buttons-list-port{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+}
+
+.images-port{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.item-image-port{
+  flex-basis: calc((100%-20px)/3);
+  border: 1px solid var(--border-color);
+}
+
+.portfolio-container{
+  padding-left: 156px;
 }
