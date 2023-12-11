@@ -269,6 +269,8 @@ ul {
 }
 
 .job-item {
+  width: 100%;
+  max-width: 264px;
   width: calc((100% - 72px) / 4);
 
   border-radius: 0px 0px 4px 4px;
@@ -374,7 +376,7 @@ ul {
 }
 
 .item-image-port {
-  width: calc((100% - 48px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
   text-decoration: none;
 }
 
