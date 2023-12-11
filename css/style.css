@@ -408,9 +408,7 @@ body {
 }
 
 .item-image-port {
-  width: 100%;
-  min-width: 264px;
-  width: calc((100% - 48px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
   border: 1px solid var(--border-color);
 }
 
