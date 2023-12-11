@@ -399,8 +399,8 @@ body {
 
 .images-port {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  flex-direction: row;
   gap: 24px;
   margin-bottom: 72px;
   column-gap: 24px;
