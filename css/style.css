@@ -229,11 +229,11 @@ body {
 }
 
 .chapters-title {
-  color: var(--brand-color);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
+  color: var(--brand-color);
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -408,7 +408,7 @@ body {
 }
 
 .item-image-port {
-  width: calc(100%-48px) / 3;
+  width: calc((100% - 48px) / 3);
   border: 1px solid var(--border-color);
 }
 
