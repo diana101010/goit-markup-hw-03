@@ -146,7 +146,7 @@ body {
 }
 
 .title-section {
-  padding: 188px 0;
+  padding: 188px 0px;
   background-color: var(--brand-color);
   width: 1440px;
   height: 600px;
@@ -285,10 +285,7 @@ body {
 
 .job-item {
   flex-basis: calc((100% - 72px) / 4);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-radius: 0px 0px 4px 4px 4px;
 }
 .name-teamcard {
   color: var(--brand-color);
@@ -411,7 +408,7 @@ body {
 }
 
 .item-image-port {
-  width: calc(100% - 48px) / 3;
+  width: calc((100% - 48px) / 3);
   border: 1px solid var(--border-color);
 }
 
